@@ -1,0 +1,350 @@
+/*Universal*/
+html {
+  font-size: 16px;
+}
+
+a {
+  list-style-type: none;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  color: #500092;
+}
+
+/*Head*/
+.headBar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 4rem;
+  background-color: #D9AAFF;
+  color: #500092;
+}
+
+.forMobile {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+nav li {
+  padding-right: 1rem;
+}
+
+.signIn {
+  padding-right: 1.5rem;
+}
+
+.colmar {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.academy {
+  text-transform: uppercase;
+}
+
+/*MAIN CONTENT*/
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+/*FIRST WINDOW*/
+
+.firstWindow {
+  display: flex;
+  align-items: center;
+  background-color: #C37AFF;
+  color: #500092;
+  width: 100%;
+}
+
+.firstWindow img {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  height: 60%;
+  width: 60%;
+}
+
+.start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF500;
+}
+
+/*SECOND WINDOW*/
+
+.secondWindow {
+  display: flex;
+  align-items: center;
+  background-color: #D9AAFF;
+}
+
+.secondWindow h1 {
+  font-size: 1.2rem;
+}
+
+.practicing {
+  padding-bottom: 2rem;
+  width: 60%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.practicing .jpg {
+  width: 100%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+
+.sidebar h1 {
+  line-height: .5rem;
+}
+
+.sidebar a {
+  line-height: .5rem;
+  text-decoration: none;
+  color: #FFF500;
+}
+
+.sidebar img {
+  height: 35%;
+  width: 35%;
+}
+
+.side {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.sideText {
+  width: 65%;
+  padding-left: 1rem;
+}
+
+/*THIRD WINDOW*/
+
+.thirdWindow{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #C37AFF;
+}
+
+.thirdWindow .top {
+  margin-top: 2rem;
+}
+
+.courses {
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  border: .1rem solid #FFF500;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.box img {
+  width: 100%;
+}
+
+
+
+.box h2 {
+  font-size: 1rem;
+}
+
+.box p {
+  font-size: .7rem;
+  margin-top: .5rem;
+}
+
+/*FOURTH WINDOW*/
+
+.fourthWindow {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #D9AAFF;
+}
+
+.fourthWindow .thesis {
+  margin-left: 2rem;
+}
+
+.fourthContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.exhibit {
+  width: 60%;
+}
+
+.fourthContainer .sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  padding-left: 1.5rem;
+}
+
+.fourthWindow .side h1 {
+  font-size: 1.2rem;
+}
+
+.exhibit video {
+  width: 100%;
+}
+
+/*FOOTER*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #C37AFF;
+  padding-left: 1.5rem;
+}
+
+footer .nav {
+  padding-top: 1rem;
+  padding-right: 1.5rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 600px) {
+  
+  body {
+    width: 100%;
+  }
+
+  .headNav {
+    display: none;
+  }
+
+  .colmar {
+    display: none;
+  }
+
+  .academy {
+    display: none;
+  }
+
+  .forMobile {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7rem;
+    padding-right: 2rem;
+    width: 100%;
+  }
+
+  .firstWindow {
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
+  .firstWindow img {
+    width: 100%;
+  }
+
+  .signIn {
+    padding-bottom: 2rem;
+  }
+
+  .practicing {
+    display: none;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+  .thirdWindow {
+    width: 100%;
+  }
+
+  .courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .box img, .box p {
+    display: none;
+  }
+
+  .box h2 {
+    font-size: 1.5rem;
+  }
+
+ .fourthWindow .sidebar {
+   display: none;
+ }
+
+ .exhibit h2, .exhibit p {
+    display: none;
+  }
+
+  .exhibit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .exhibit video {
+    width: 100%;
+  }
+}
